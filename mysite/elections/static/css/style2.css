@@ -1,0 +1,92 @@
+*{padding:0;margin:0}
+ul,ol{list-style:none}
+a{text-decoration:none;color:rgb(57, 57, 57);font-size:15px}
+nav{width:80%;overflow:hidden;height:20px;margin:50px auto}
+
+#nav>a {
+    display: block; /* a태그는 글자성격 = inline */
+    float: left;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+  #nav>ul {
+    float: right;
+  }
+  #nav>ul li {
+    float: left;
+    padding: 0 30px;
+    line-height: 20px;
+    margin: 0 auto;
+  }
+
+  .whole {
+    padding: 20px 20px;
+    background-color: rgb(255, 244, 204);
+    margin: 100px 300px;
+    font-family: 'Gaegu', cursive;
+    font-size: 1em;
+  }
+
+  .dancing-icon2 {
+	width: 75px;
+	height: 78px;
+	margin: 50px auto;
+	position: relative;
+}
+        
+        
+.heart {
+	color: #F37476;
+	z-index: 0;
+	position: absolute;
+	top: 20px;
+	left: 0;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+	font-size: 10px;
+	animation-duration:2s;
+	-webkit-animation-duration:2s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-play-state:running;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:running;
+	animation-name:hearts;
+	-webkit-animation-name:hearts;
+}
+
+.hearts-animations .heart:nth-child(1) {
+	animation-delay:1.25s;
+	-webkit-animation-delay:1.25s;
+	left: 12px;
+}
+
+.hearts-animations .heart:nth-child(2) {
+	animation-delay:0.75s;
+	-webkit-animation-delay:0.75s;
+	left: 32px;
+}
+
+.hearts-animations .heart:nth-child(3) {
+	animation-delay:1.75s;
+	-webkit-animation-delay:1.75s;
+	left: 52px;
+}
+
+@keyframes hearts {
+	0% {transform:rotate(20deg);opacity:0;}
+	50% {transform:rotate(-20deg);opacity:1;}
+	100% {top:-60px;transform:rotate(20deg);opacity:0;}
+}
+
+@-webkit-keyframes hearts {
+	0% {transform:rotate(20deg);opacity:0;}
+	50% {transform:rotate(-20deg);opacity:1;}
+	100% {top:-60px;transform:rotate(20deg);opacity:0;}
+}

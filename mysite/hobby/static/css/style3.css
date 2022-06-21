@@ -1,0 +1,43 @@
+*{padding:0;margin:0}
+ul,ol{list-style:none}
+a{text-decoration:none;color:rgb(57, 57, 57);font-size:15px}
+nav{width:80%;overflow:hidden;height:20px;margin:50px auto}
+
+#nav>a {
+    display: block; /* a태그는 글자성격 = inline */
+    float: left;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+  #nav>ul {
+    float: right;
+  }
+  #nav>ul li {
+    float: left;
+    padding: 0 30px;
+    line-height: 20px;
+    margin: 0 auto;
+  }
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    margin: 10px 10px;
+    padding: 0px 2px;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    font-family: 'Gaegu', cursive;
+    font-size: 2.3em;
+}
+
